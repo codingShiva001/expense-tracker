@@ -269,18 +269,24 @@ h1{
   color:#2563eb;
   margin:8px 0;
 }
-/* Mobile responsive fix */
+.expense-form input,
+.expense-form select {
+  width: 100%;
+}
+input[type="date"] {
+  width: 100%;
+  min-height: 44px;
+  font-size: 16px;
+  padding: 12px;
+  box-sizing: border-box;
+}
 @media (max-width: 768px) {
-  .date-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 8px;
+  .expense-form {
+    gap: 12px;
   }
 
-  .date-item {
-    flex: 1 1 45%;
-    text-align: center;
-    margin-bottom: 8px;
+  .expense-form input,
+  .expense-form select {
+    width: 100%;
   }
 }
