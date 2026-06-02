@@ -273,12 +273,21 @@ h1{
 .expense-form select {
   width: 100%;
 }
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
 input[type="date"] {
   width: 100%;
-  min-height: 44px;
-  font-size: 16px;
+  min-height: 48px;
   padding: 12px;
+  font-size: 16px;
   box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 @media (max-width: 768px) {
   .expense-form {
@@ -289,8 +298,4 @@ input[type="date"] {
   .expense-form select {
     width: 100%;
   }
-}
-#date {
-  background: yellow;
-  border: 3px solid red;
 }
